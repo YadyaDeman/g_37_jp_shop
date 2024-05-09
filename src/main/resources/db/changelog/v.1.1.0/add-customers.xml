@@ -7,15 +7,15 @@
     <changeSet id="add_customers" author="yadviha">
 
         <insert tableName="customer">
-            <column name="name" value="Ben"/>
+            <column name="name" value="Garry"/>
         </insert>
 
         <insert tableName="customer">
-            <column name="name" value="Luke"/>
+            <column name="name" value="Freddie"/>
         </insert>
 
         <insert tableName="customer">
-            <column name="name" value="Han"/>
+            <column name="name" value="Garfield"/>
         </insert>
 
     </changeSet>

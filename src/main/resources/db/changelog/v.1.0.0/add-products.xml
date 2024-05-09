@@ -8,20 +8,32 @@
 
         <insert tableName="product">
             <column name="is_active" value="true"/>
-            <column name="title" value="Banana"/>
-            <column name="price" value="150"/>
-        </insert>
-
-        <insert tableName="product">
-            <column name="is_active" value="true"/>
-            <column name="title" value="Apple"/>
-            <column name="price" value="70"/>
+            <column name="title" value="Lemon"/>
+            <column name="price" value="0.99"/>
         </insert>
 
         <insert tableName="product">
             <column name="is_active" value="true"/>
             <column name="title" value="Orange"/>
-            <column name="price" value="210"/>
+            <column name="price" value="1.99"/>
+        </insert>
+
+        <insert tableName="product">
+            <column name="is_active" value="true"/>
+            <column name="title" value="Grapefruit"/>
+            <column name="price" value="1.50"/>
+        </insert>
+
+   <insert tableName="product">
+            <column name="is_active" value="true"/>
+            <column name="title" value="Apple"/>
+            <column name="price" value="1.80"/>
+        </insert>
+
+<insert tableName="product">
+            <column name="is_active" value="true"/>
+            <column name="title" value="Kiwi"/>
+            <column name="price" value="1.00"/>
         </insert>
 
     </changeSet>

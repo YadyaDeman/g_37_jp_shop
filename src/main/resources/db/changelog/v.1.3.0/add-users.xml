@@ -4,15 +4,20 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
-    <changeSet id="add_users" author="andrey">
+    <changeSet id="add_users" author="yadviha">
 
         <insert tableName="user">
-            <column name="username" value="Sergey"/>
+            <column name="username" value="Freddie"/>
             <column name="password" value="$2a$10$3Px3bA82VZL3fB3rSfwxNu1d5X/u9VclLok6DAYvwlzeTsCIKQvsK"/>
         </insert>
 
         <insert tableName="user">
-            <column name="username" value="Alex"/>
+            <column name="username" value="Garfield"/>
+            <column name="password" value="$2a$10$3Px3bA82VZL3fB3rSfwxNu1d5X/u9VclLok6DAYvwlzeTsCIKQvsK"/>
+        </insert>
+
+        <insert tableName="user">
+            <column name="username" value="Garry"/>
             <column name="password" value="$2a$10$3Px3bA82VZL3fB3rSfwxNu1d5X/u9VclLok6DAYvwlzeTsCIKQvsK"/>
         </insert>
 
