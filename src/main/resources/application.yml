@@ -10,6 +10,13 @@ spring:
     properties:
       hibernate:
         auto_quote_keyword: true
+
 key:
   access: aovKvB5EPC2sJF8M1vW08teR3cjH8UeqgbCLRSz1vO0=
   refresh: vrRC763g2HqdiScO2btLXn3DbYonipd40hNSMakDlDg=
+
+logging:
+  file:
+    name: logs/log.log
+  level:
+    root: info

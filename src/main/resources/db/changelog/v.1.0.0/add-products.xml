@@ -4,36 +4,24 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
-    <changeSet id="add_products" author="yadviha">
+    <changeSet id="add_products" author="Yadviha">
 
         <insert tableName="product">
             <column name="is_active" value="true"/>
             <column name="title" value="Lemon"/>
-            <column name="price" value="0.99"/>
+            <column name="price" value="100"/>
         </insert>
 
         <insert tableName="product">
             <column name="is_active" value="true"/>
             <column name="title" value="Orange"/>
-            <column name="price" value="1.99"/>
+            <column name="price" value="170"/>
         </insert>
 
         <insert tableName="product">
             <column name="is_active" value="true"/>
-            <column name="title" value="Grapefruit"/>
-            <column name="price" value="1.50"/>
-        </insert>
-
-   <insert tableName="product">
-            <column name="is_active" value="true"/>
             <column name="title" value="Apple"/>
-            <column name="price" value="1.80"/>
-        </insert>
-
-<insert tableName="product">
-            <column name="is_active" value="true"/>
-            <column name="title" value="Kiwi"/>
-            <column name="price" value="1.00"/>
+            <column name="price" value="110"/>
         </insert>
 
     </changeSet>

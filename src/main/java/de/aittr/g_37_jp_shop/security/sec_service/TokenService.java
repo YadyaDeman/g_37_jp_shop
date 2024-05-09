@@ -28,7 +28,9 @@ public class TokenService {
             @Value("${key.access}") String accessKey,
             @Value("${key.refresh}") String refreshKey,
             RoleRepository roleRepository
-    ) {
+    )
+    //генерируем ключи по ссылке: https://www.devglan.com/online-tools/hmac-sha256-online 13 урок
+    {
         this.accessKey = Keys.hmacShaKeyFor(Decoders.BASE64.decode(accessKey));
         this.refreshKey = Keys.hmacShaKeyFor(Decoders.BASE64.decode(refreshKey));
         this.roleRepository = roleRepository;

@@ -5,6 +5,8 @@ import de.aittr.g_37_jp_shop.domain.entity.Product;
 import de.aittr.g_37_jp_shop.repository.ProductRepository;
 import de.aittr.g_37_jp_shop.service.interfaces.ProductService;
 import de.aittr.g_37_jp_shop.service.mapping.ProductMappingService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -12,6 +14,8 @@ import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {
+
+    private Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
 
     private ProductRepository repository;
     private ProductMappingService mappingService;
@@ -23,6 +27,9 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public ProductDto save(ProductDto dto) {
+        // Join point - то место, куда будет внедрён дополнительный код
+//        logger.info("Method called with product {}", dto);
+
         Product entity = mappingService.mapDtoToEntity(dto);
         repository.save(entity);
         return mappingService.mapEntityToDto(entity);
@@ -30,6 +37,13 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDto> getAll() {
+
+//        String productTitle = "Test product";
+//
+//        logger.info("Database request: get all products");
+//        logger.warn("Product with title {} not found", productTitle);
+//        logger.error("SQL exception! Incorrect query");
+
         return repository.findAll()
                 .stream()
 //                .filter(x -> x.isActive())

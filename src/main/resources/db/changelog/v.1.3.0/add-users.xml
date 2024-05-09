@@ -7,17 +7,12 @@
     <changeSet id="add_users" author="yadviha">
 
         <insert tableName="user">
-            <column name="username" value="Freddie"/>
+            <column name="username" value="Yadviha"/>
             <column name="password" value="$2a$10$3Px3bA82VZL3fB3rSfwxNu1d5X/u9VclLok6DAYvwlzeTsCIKQvsK"/>
         </insert>
 
         <insert tableName="user">
-            <column name="username" value="Garfield"/>
-            <column name="password" value="$2a$10$3Px3bA82VZL3fB3rSfwxNu1d5X/u9VclLok6DAYvwlzeTsCIKQvsK"/>
-        </insert>
-
-        <insert tableName="user">
-            <column name="username" value="Garry"/>
+            <column name="username" value="Alexander"/>
             <column name="password" value="$2a$10$3Px3bA82VZL3fB3rSfwxNu1d5X/u9VclLok6DAYvwlzeTsCIKQvsK"/>
         </insert>
 
