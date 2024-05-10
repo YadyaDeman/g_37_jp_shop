@@ -20,3 +20,6 @@ logging:
     name: logs/log.log
   level:
     root: info
+
+messages:
+  hello: Hello from local application!

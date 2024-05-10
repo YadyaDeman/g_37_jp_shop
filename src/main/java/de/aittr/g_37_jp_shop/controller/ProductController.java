@@ -1,7 +1,10 @@
 package de.aittr.g_37_jp_shop.controller;
 
 import de.aittr.g_37_jp_shop.domain.dto.ProductDto;
+import de.aittr.g_37_jp_shop.exception_handling.Response;
+import de.aittr.g_37_jp_shop.exception_handling.exceptions.FirstTestException;
 import de.aittr.g_37_jp_shop.service.interfaces.ProductService;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,6 +43,13 @@ public class ProductController {
     // может только зарегистрированный пользователь (с любой ролью)
     @GetMapping
     public ProductDto getById(@RequestParam Long id) {
+//        if (id <1){
+//            throw new FirstTestException("ID is incorrect!");
+//        }
+       /*try {
+         } catch (FirstTestException e){
+           System.out.println(e.getMessage());
+         }*/
         return service.getById(id);
     }
 
@@ -48,5 +58,19 @@ public class ProductController {
     @PostMapping
     public ProductDto save(@RequestBody ProductDto product) {
         return service.save(product);
+    }
+
+    // 1 СПОСОБ обработки исключений
+    // ПЛЮС - позволяет точечно настроить обработку исключения применительно
+    // к данному конкретному контроллеру, в случае, если нам требуется разная
+    // логика обработки того же самого исключения в разных контроллерах
+    // МИНУС - если нам не требуется разной логики обработки ошибки для
+    // разных контроллеров, такой обработчик придётся писать в каждом контроллере
+    @ExceptionHandler(FirstTestException.class)
+    @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
+    public Response handleException(FirstTestException e) {
+        System.out.println("Error! - " + e.getMessage());
+        e.printStackTrace();
+        return new Response(e.getMessage());
     }
 }

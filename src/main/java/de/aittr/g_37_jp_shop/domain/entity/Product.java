@@ -2,9 +2,11 @@ package de.aittr.g_37_jp_shop.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 import java.math.BigDecimal;
 import java.util.Objects;
+
 
 @Entity
 @Table(name = "product")
@@ -16,9 +18,35 @@ public class Product {
     private Long id;
 
     @Column(name = "title")
+    @NotNull
+            (message = "Product title cannot be null")
+    @NotBlank(message = "Product title cannot be empty")
     private String title;
+    //Banana -V
+    //banana - x
+    //Ba - x
+    //BANANA - x
+    //Banana3 -x
+    //Banana# - x
+    //Банана - x
+    @Pattern(
+            regexp = "[A-Z][a-z]{2,}",
+            message = "Product title should be at least 3 character," +
+            " start with capital letter and may contain only latin character."
+    )
+
 
     @Column(name = "price")
+    @NotNull(message = "Product price cannot be null")
+    @DecimalMin(
+            value = "5.00",
+            message = "Product price should be greater or equal than 5.00"
+    )
+    @DecimalMax(
+            value = "1000000.00",
+            inclusive = false,
+            message = "Product price should be lesser than 1000000.00"
+    )
     private BigDecimal price;
 
     @Column(name = "is_active")

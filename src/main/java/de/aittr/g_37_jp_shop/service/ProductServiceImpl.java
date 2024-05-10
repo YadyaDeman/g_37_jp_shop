@@ -2,6 +2,10 @@ package de.aittr.g_37_jp_shop.service;
 
 import de.aittr.g_37_jp_shop.domain.dto.ProductDto;
 import de.aittr.g_37_jp_shop.domain.entity.Product;
+import de.aittr.g_37_jp_shop.exception_handling.exceptions.FirstTestException;
+import de.aittr.g_37_jp_shop.exception_handling.exceptions.FourthTestException;
+import de.aittr.g_37_jp_shop.exception_handling.exceptions.SecondTestException;
+import de.aittr.g_37_jp_shop.exception_handling.exceptions.ThirdTestException;
 import de.aittr.g_37_jp_shop.repository.ProductRepository;
 import de.aittr.g_37_jp_shop.service.interfaces.ProductService;
 import de.aittr.g_37_jp_shop.service.mapping.ProductMappingService;
@@ -31,9 +35,15 @@ public class ProductServiceImpl implements ProductService {
 //        logger.info("Method called with product {}", dto);
 
         Product entity = mappingService.mapDtoToEntity(dto);
-        repository.save(entity);
+        try {
+            repository.save(entity);
+        } catch (Exception e) {
+            throw new FourthTestException("Saving product error!", e);
+        }
+
         return mappingService.mapEntityToDto(entity);
     }
+
 
     @Override
     public List<ProductDto> getAll() {
@@ -56,7 +66,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductDto getById(Long id) {
         if (id == null || id < 1) {
-            throw new RuntimeException("Product id is incorrect");
+            // throw new RuntimeException("Product id is incorrect");
+            // throw new FirstTestException("Product id is incorrect");
+            // throw new SecondTestException("Product id is incorrect");
+            // throw new ThirdTestException("Product id is incorrect");
+            throw new FourthTestException("Product id is incorrect");
         }
 
         Product product = repository.findById(id).orElse(null);

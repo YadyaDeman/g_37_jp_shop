@@ -40,7 +40,9 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/products/all").permitAll()
                         .requestMatchers(HttpMethod.POST, "/products").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/access").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/hello").permitAll()
                         .anyRequest().authenticated())
+                      //  .anyRequest().permitAll())
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .addFilterAfter(filter, UsernamePasswordAuthenticationFilter.class)
                 .build();
