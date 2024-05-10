@@ -1,0 +1,425 @@
+2024-05-10T10:19:14.190+02:00  INFO 8860 --- [main] d.a.g.Group37JavaProShopApplication      : Starting Group37JavaProShopApplication using Java 17.0.8 with PID 8860 (C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes started by Yadya in C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop)
+2024-05-10T10:19:14.231+02:00  INFO 8860 --- [main] d.a.g.Group37JavaProShopApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-05-10T10:19:19.139+02:00  INFO 8860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-10T10:19:19.564+02:00  INFO 8860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 393 ms. Found 4 JPA repository interfaces.
+2024-05-10T10:19:25.338+02:00  INFO 8860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-10T10:19:25.385+02:00  INFO 8860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-10T10:19:25.386+02:00  INFO 8860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-10T10:19:25.782+02:00  INFO 8860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-10T10:19:25.786+02:00  INFO 8860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11250 ms
+2024-05-10T10:19:26.318+02:00  INFO 8860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-10T10:19:27.669+02:00  INFO 8860 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f395ce1
+2024-05-10T10:19:27.674+02:00  INFO 8860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-10T10:19:28.433+02:00  INFO 8860 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-10T10:19:36.180+02:00  INFO 8860 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T10:19:36.481+02:00  INFO 8860 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T10:19:36.513+02:00  INFO 8860 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-10T10:19:36.514+02:00  INFO 8860 --- [main] liquibase.util                           : Run:                          0
+2024-05-10T10:19:36.515+02:00  INFO 8860 --- [main] liquibase.util                           : Previously run:              21
+2024-05-10T10:19:36.517+02:00  INFO 8860 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-10T10:19:36.517+02:00  INFO 8860 --- [main] liquibase.util                           : -------------------------------
+2024-05-10T10:19:36.518+02:00  INFO 8860 --- [main] liquibase.util                           : Total change sets:           21
+2024-05-10T10:19:36.518+02:00  INFO 8860 --- [main] liquibase.util                           : Update summary generated
+2024-05-10T10:19:36.603+02:00  INFO 8860 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-10T10:19:36.609+02:00  INFO 8860 --- [main] liquibase.command                        : Command execution complete
+2024-05-10T10:19:36.986+02:00  INFO 8860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-10T10:19:37.226+02:00  INFO 8860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-10T10:19:37.362+02:00  INFO 8860 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-10T10:19:38.159+02:00  INFO 8860 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-10T10:19:41.500+02:00  INFO 8860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-10T10:19:41.508+02:00  INFO 8860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T10:19:42.709+02:00  INFO 8860 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-10T10:19:43.132+02:00  WARN 8860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-10T10:19:44.136+02:00  INFO 8860 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2753f60a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ca9a408, org.springframework.security.web.context.SecurityContextHolderFilter@50adedaa, org.springframework.security.web.header.HeaderWriterFilter@3e678502, org.springframework.web.filter.CorsFilter@346df1c0, org.springframework.security.web.authentication.logout.LogoutFilter@399737f5, de.aittr.g_37_jp_shop.security.sec_filter.TokenFilter@339c7bc8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50f5cec3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d68257, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45069467, org.springframework.security.web.session.SessionManagementFilter@604f8e79, org.springframework.security.web.access.ExceptionTranslationFilter@122d4458, org.springframework.security.web.access.intercept.AuthorizationFilter@40ff1065]
+2024-05-10T10:19:44.936+02:00  INFO 8860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-10T10:19:44.965+02:00  INFO 8860 --- [main] d.a.g.Group37JavaProShopApplication      : Started Group37JavaProShopApplication in 32.886 seconds (process running for 36.932)
+2024-05-10T11:29:49.207+02:00  INFO 8860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T11:29:49.821+02:00  INFO 8860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-10T11:29:50.083+02:00  INFO 8860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-10T11:37:56.180+02:00  INFO 10992 --- [main] d.a.g.Group37JavaProShopApplication      : Starting Group37JavaProShopApplication using Java 17.0.8 with PID 10992 (C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes started by Yadya in C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop)
+2024-05-10T11:37:56.195+02:00  INFO 10992 --- [main] d.a.g.Group37JavaProShopApplication      : The following 1 profile is active: "dev"
+2024-05-10T11:38:02.243+02:00  INFO 10992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-10T11:38:02.758+02:00  INFO 10992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 465 ms. Found 4 JPA repository interfaces.
+2024-05-10T11:38:08.872+02:00  INFO 10992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-10T11:38:08.955+02:00  INFO 10992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-10T11:38:08.960+02:00  INFO 10992 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-10T11:38:09.656+02:00  INFO 10992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-10T11:38:09.658+02:00  INFO 10992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13155 ms
+2024-05-10T11:38:11.367+02:00  INFO 10992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-10T11:38:12.587+02:00  INFO 10992 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@448c92fc
+2024-05-10T11:38:12.607+02:00  INFO 10992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-10T11:38:14.279+02:00  INFO 10992 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-10T11:38:23.059+02:00  INFO 10992 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T11:38:23.635+02:00  INFO 10992 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T11:38:23.686+02:00  INFO 10992 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-10T11:38:23.688+02:00  INFO 10992 --- [main] liquibase.util                           : Run:                          0
+2024-05-10T11:38:23.689+02:00  INFO 10992 --- [main] liquibase.util                           : Previously run:              21
+2024-05-10T11:38:23.690+02:00  INFO 10992 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-10T11:38:23.692+02:00  INFO 10992 --- [main] liquibase.util                           : -------------------------------
+2024-05-10T11:38:23.693+02:00  INFO 10992 --- [main] liquibase.util                           : Total change sets:           21
+2024-05-10T11:38:23.695+02:00  INFO 10992 --- [main] liquibase.util                           : Update summary generated
+2024-05-10T11:38:23.787+02:00  INFO 10992 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-10T11:38:23.790+02:00  INFO 10992 --- [main] liquibase.command                        : Command execution complete
+2024-05-10T11:38:24.322+02:00  INFO 10992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-10T11:38:24.776+02:00  INFO 10992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-10T11:38:25.098+02:00  INFO 10992 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-10T11:38:26.599+02:00  INFO 10992 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-10T11:38:33.806+02:00  INFO 10992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-10T11:38:33.827+02:00  INFO 10992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T11:38:37.876+02:00  INFO 10992 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-10T11:38:39.933+02:00  WARN 10992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-10T11:38:43.221+02:00  INFO 10992 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6904fe7f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@573a43f4, org.springframework.security.web.context.SecurityContextHolderFilter@23edc081, org.springframework.security.web.header.HeaderWriterFilter@9eb378c, org.springframework.web.filter.CorsFilter@ecd59a3, org.springframework.security.web.authentication.logout.LogoutFilter@55b2cdcb, de.aittr.g_37_jp_shop.security.sec_filter.TokenFilter@f8b81a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c81f231, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a799c73, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15c882e8, org.springframework.security.web.session.SessionManagementFilter@1dc9fc0, org.springframework.security.web.access.ExceptionTranslationFilter@6c6ea911, org.springframework.security.web.access.intercept.AuthorizationFilter@2fdece0e]
+2024-05-10T11:38:44.989+02:00  INFO 10992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-10T11:38:45.133+02:00  INFO 10992 --- [main] d.a.g.Group37JavaProShopApplication      : Started Group37JavaProShopApplication in 52.211 seconds (process running for 54.706)
+2024-05-10T11:39:33.168+02:00  INFO 10992 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T11:39:33.176+02:00  INFO 10992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-10T11:39:33.227+02:00  INFO 10992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-10T11:40:11.938+02:00  INFO 12104 --- [main] d.a.g.Group37JavaProShopApplication      : Starting Group37JavaProShopApplication using Java 17.0.8 with PID 12104 (C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes started by Yadya in C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop)
+2024-05-10T11:40:11.951+02:00  INFO 12104 --- [main] d.a.g.Group37JavaProShopApplication      : The following 1 profile is active: "dev"
+2024-05-10T11:40:20.474+02:00  INFO 12104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-10T11:40:21.166+02:00  INFO 12104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 599 ms. Found 4 JPA repository interfaces.
+2024-05-10T11:40:29.117+02:00  INFO 12104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-10T11:40:29.238+02:00  INFO 12104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-10T11:40:29.239+02:00  INFO 12104 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-10T11:40:29.961+02:00  INFO 12104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-10T11:40:29.967+02:00  INFO 12104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17609 ms
+2024-05-10T11:40:32.430+02:00  INFO 12104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-10T11:40:35.955+02:00  INFO 12104 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26c8b296
+2024-05-10T11:40:35.963+02:00  INFO 12104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-10T11:40:37.824+02:00  INFO 12104 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-10T11:40:47.638+02:00  INFO 12104 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T11:40:48.437+02:00  INFO 12104 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T11:40:48.486+02:00  INFO 12104 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-10T11:40:48.489+02:00  INFO 12104 --- [main] liquibase.util                           : Run:                          0
+2024-05-10T11:40:48.490+02:00  INFO 12104 --- [main] liquibase.util                           : Previously run:              21
+2024-05-10T11:40:48.491+02:00  INFO 12104 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-10T11:40:48.499+02:00  INFO 12104 --- [main] liquibase.util                           : -------------------------------
+2024-05-10T11:40:48.518+02:00  INFO 12104 --- [main] liquibase.util                           : Total change sets:           21
+2024-05-10T11:40:48.520+02:00  INFO 12104 --- [main] liquibase.util                           : Update summary generated
+2024-05-10T11:40:48.779+02:00  INFO 12104 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-10T11:40:48.784+02:00  INFO 12104 --- [main] liquibase.command                        : Command execution complete
+2024-05-10T11:40:49.438+02:00  INFO 12104 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-10T11:40:50.004+02:00  INFO 12104 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-10T11:40:50.364+02:00  INFO 12104 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-10T11:40:51.729+02:00  INFO 12104 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-10T11:41:01.095+02:00  INFO 12104 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-10T11:41:01.109+02:00  INFO 12104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T11:41:04.076+02:00  INFO 12104 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-10T11:41:05.735+02:00  WARN 12104 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-10T11:41:09.949+02:00  INFO 12104 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@314ba270, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79b5a9e6, org.springframework.security.web.context.SecurityContextHolderFilter@47312528, org.springframework.security.web.header.HeaderWriterFilter@7e04410, org.springframework.web.filter.CorsFilter@48df2306, org.springframework.security.web.authentication.logout.LogoutFilter@3b93b86b, de.aittr.g_37_jp_shop.security.sec_filter.TokenFilter@25639962, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72c55bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68e66fff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54bb5dd0, org.springframework.security.web.session.SessionManagementFilter@7d3e88a, org.springframework.security.web.access.ExceptionTranslationFilter@42afb24c, org.springframework.security.web.access.intercept.AuthorizationFilter@4daf8e98]
+2024-05-10T11:41:13.060+02:00  INFO 12104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-10T11:41:13.153+02:00  INFO 12104 --- [main] d.a.g.Group37JavaProShopApplication      : Started Group37JavaProShopApplication in 65.526 seconds (process running for 68.803)
+2024-05-10T11:41:39.228+02:00  INFO 12104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-10T11:41:39.229+02:00  INFO 12104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-10T11:41:39.242+02:00  INFO 12104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-05-10T12:00:01.992+02:00  INFO 12104 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T12:00:02.243+02:00  INFO 12104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-10T12:00:02.389+02:00  INFO 12104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-10T12:09:56.504+02:00  INFO 11188 --- [main] d.a.g.Group37JavaProShopApplication      : Starting Group37JavaProShopApplication using Java 17.0.8 with PID 11188 (C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes started by Yadya in C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop)
+2024-05-10T12:09:56.518+02:00  INFO 11188 --- [main] d.a.g.Group37JavaProShopApplication      : The following 1 profile is active: "dev"
+2024-05-10T12:10:02.873+02:00  INFO 11188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-10T12:10:03.512+02:00  INFO 11188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 596 ms. Found 4 JPA repository interfaces.
+2024-05-10T12:10:08.323+02:00  INFO 11188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-10T12:10:08.521+02:00  INFO 11188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-10T12:10:08.522+02:00  INFO 11188 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-10T12:10:09.015+02:00  INFO 11188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-10T12:10:09.016+02:00  INFO 11188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12263 ms
+2024-05-10T12:10:09.226+02:00 ERROR 11188 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'tokenFilter' defined in file [C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes\de\aittr\g_37_jp_shop\security\sec_filter\TokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes\de\aittr\g_37_jp_shop\security\sec_service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'roleRepository' defined in de.aittr.g_37_jp_shop.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2024-05-10T12:10:09.465+02:00  INFO 11188 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-10T12:10:09.514+02:00  WARN 11188 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-05-10T12:10:09.565+02:00  INFO 11188 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-10T12:10:09.907+02:00 ERROR 11188 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:618) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at de.aittr.g_37_jp_shop.Group37JavaProShopApplication.main(Group37JavaProShopApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:145) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:105) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:499) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:218) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.2.5.jar:3.2.5]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tokenFilter' defined in file [C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes\de\aittr\g_37_jp_shop\security\sec_filter\TokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes\de\aittr\g_37_jp_shop\security\sec_service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'roleRepository' defined in de.aittr.g_37_jp_shop.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:173) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:168) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:153) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4880) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126) ~[spring-boot-3.2.5.jar:3.2.5]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tokenService' defined in file [C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes\de\aittr\g_37_jp_shop\security\sec_service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'roleRepository' defined in de.aittr.g_37_jp_shop.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleRepository' defined in de.aittr.g_37_jp_shop.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1685) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 82 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Failed to instantiate [liquibase.integration.spring.SpringLiquibase]: Factory method 'liquibase' threw exception with message: Error creating bean with name 'digitalOceanDataSourceConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 94 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [liquibase.integration.spring.SpringLiquibase]: Factory method 'liquibase' threw exception with message: Error creating bean with name 'digitalOceanDataSourceConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 106 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'digitalOceanDataSourceConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfUnique(DefaultListableBeanFactory.java:2153) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration.liquibase(LiquibaseAutoConfiguration.java:102) ~[spring-boot-autoconfigure-3.2.5.jar:3.2.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 107 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'DB_USERNAME' in value "${DB_USERNAME}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:953) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 132 common frames omitted
+
+2024-05-10T12:11:35.521+02:00  INFO 10448 --- [main] d.a.g.Group37JavaProShopApplication      : Starting Group37JavaProShopApplication using Java 17.0.8 with PID 10448 (C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes started by Yadya in C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop)
+2024-05-10T12:11:35.531+02:00  INFO 10448 --- [main] d.a.g.Group37JavaProShopApplication      : The following 1 profile is active: "dev"
+2024-05-10T12:11:36.659+02:00  WARN 10448 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes\de\aittr\g_37_jp_shop\config\DigitalOceanDataSourceConfig.class]
+2024-05-10T12:11:38.108+02:00 ERROR 10448 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes\de\aittr\g_37_jp_shop\config\DigitalOceanDataSourceConfig.class]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:510) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:351) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:277) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at de.aittr.g_37_jp_shop.Group37JavaProShopApplication.main(Group37JavaProShopApplication.java:10) ~[classes/:na]
+Caused by: java.lang.IllegalArgumentException: Invalid profile expression []: must contain text
+	at org.springframework.util.Assert.hasText(Assert.java:260) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.core.env.ProfilesParser.parseExpression(ProfilesParser.java:55) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.core.env.ProfilesParser.parse(ProfilesParser.java:49) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.core.env.Profiles.of(Profiles.java:73) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.core.env.Environment.matchesProfiles(Environment.java:114) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ProfileCondition.matches(ProfileCondition.java:38) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:564) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:547) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:471) ~[spring-context-6.1.6.jar:6.1.6]
+	... 20 common frames omitted
+
+2024-05-10T12:12:16.567+02:00  INFO 8880 --- [main] d.a.g.Group37JavaProShopApplication      : Starting Group37JavaProShopApplication using Java 17.0.8 with PID 8880 (C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes started by Yadya in C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop)
+2024-05-10T12:12:16.579+02:00  INFO 8880 --- [main] d.a.g.Group37JavaProShopApplication      : The following 1 profile is active: "dev"
+2024-05-10T12:12:23.038+02:00  INFO 8880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-10T12:12:23.448+02:00  INFO 8880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 378 ms. Found 4 JPA repository interfaces.
+2024-05-10T12:12:28.325+02:00  INFO 8880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-10T12:12:28.377+02:00  INFO 8880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-10T12:12:28.378+02:00  INFO 8880 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-10T12:12:28.897+02:00  INFO 8880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-10T12:12:28.900+02:00  INFO 8880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11871 ms
+2024-05-10T12:12:29.853+02:00  INFO 8880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-10T12:12:31.318+02:00  INFO 8880 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a216eb4
+2024-05-10T12:12:31.327+02:00  INFO 8880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-10T12:12:32.522+02:00  INFO 8880 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-10T12:12:40.302+02:00  INFO 8880 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T12:12:40.759+02:00  INFO 8880 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T12:12:40.809+02:00  INFO 8880 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-10T12:12:40.810+02:00  INFO 8880 --- [main] liquibase.util                           : Run:                          0
+2024-05-10T12:12:40.811+02:00  INFO 8880 --- [main] liquibase.util                           : Previously run:              21
+2024-05-10T12:12:40.811+02:00  INFO 8880 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-10T12:12:40.812+02:00  INFO 8880 --- [main] liquibase.util                           : -------------------------------
+2024-05-10T12:12:40.813+02:00  INFO 8880 --- [main] liquibase.util                           : Total change sets:           21
+2024-05-10T12:12:40.814+02:00  INFO 8880 --- [main] liquibase.util                           : Update summary generated
+2024-05-10T12:12:40.931+02:00  INFO 8880 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-10T12:12:40.935+02:00  INFO 8880 --- [main] liquibase.command                        : Command execution complete
+2024-05-10T12:12:41.467+02:00  INFO 8880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-10T12:12:41.738+02:00  INFO 8880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-10T12:12:41.897+02:00  INFO 8880 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-10T12:12:42.932+02:00  INFO 8880 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-10T12:12:53.467+02:00  INFO 8880 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-10T12:12:53.496+02:00  INFO 8880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T12:12:56.821+02:00  INFO 8880 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-10T12:12:57.789+02:00  WARN 8880 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-10T12:12:59.214+02:00  INFO 8880 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a332d23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d11c8fa, org.springframework.security.web.context.SecurityContextHolderFilter@64342f87, org.springframework.security.web.header.HeaderWriterFilter@72c55bf, org.springframework.web.filter.CorsFilter@f629829, org.springframework.security.web.authentication.logout.LogoutFilter@54bb5dd0, de.aittr.g_37_jp_shop.security.sec_filter.TokenFilter@476fb241, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75a45239, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58c92c02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@614eceb, org.springframework.security.web.session.SessionManagementFilter@6b86a5a4, org.springframework.security.web.access.ExceptionTranslationFilter@47312528, org.springframework.security.web.access.intercept.AuthorizationFilter@3bb728d1]
+2024-05-10T12:13:00.208+02:00  INFO 8880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-10T12:13:00.240+02:00  INFO 8880 --- [main] d.a.g.Group37JavaProShopApplication      : Started Group37JavaProShopApplication in 47.464 seconds (process running for 50.608)
+2024-05-10T12:13:00.295+02:00  INFO 8880 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T12:13:00.302+02:00  INFO 8880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-10T12:13:00.337+02:00  INFO 8880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-10T12:13:19.360+02:00  INFO 9596 --- [main] d.a.g.Group37JavaProShopApplication      : Starting Group37JavaProShopApplication using Java 17.0.8 with PID 9596 (C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop\target\classes started by Yadya in C:\Users\Yadya\Desktop\JavaPro SHOP\g_37_jp_shop)
+2024-05-10T12:13:19.384+02:00  INFO 9596 --- [main] d.a.g.Group37JavaProShopApplication      : The following 1 profile is active: "dev"
+2024-05-10T12:13:24.026+02:00  INFO 9596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-10T12:13:24.412+02:00  INFO 9596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 350 ms. Found 4 JPA repository interfaces.
+2024-05-10T12:13:28.316+02:00  INFO 9596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-10T12:13:28.363+02:00  INFO 9596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-10T12:13:28.364+02:00  INFO 9596 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-10T12:13:28.792+02:00  INFO 9596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-10T12:13:28.794+02:00  INFO 9596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8772 ms
+2024-05-10T12:13:29.430+02:00  INFO 9596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-10T12:13:30.344+02:00  INFO 9596 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a05dd30
+2024-05-10T12:13:30.350+02:00  INFO 9596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-10T12:13:32.596+02:00  INFO 9596 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-10T12:13:38.352+02:00  INFO 9596 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T12:13:39.026+02:00  INFO 9596 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T12:13:39.077+02:00  INFO 9596 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-10T12:13:39.080+02:00  INFO 9596 --- [main] liquibase.util                           : Run:                          0
+2024-05-10T12:13:39.081+02:00  INFO 9596 --- [main] liquibase.util                           : Previously run:              21
+2024-05-10T12:13:39.087+02:00  INFO 9596 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-10T12:13:39.091+02:00  INFO 9596 --- [main] liquibase.util                           : -------------------------------
+2024-05-10T12:13:39.092+02:00  INFO 9596 --- [main] liquibase.util                           : Total change sets:           21
+2024-05-10T12:13:39.093+02:00  INFO 9596 --- [main] liquibase.util                           : Update summary generated
+2024-05-10T12:13:39.210+02:00  INFO 9596 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-10T12:13:39.217+02:00  INFO 9596 --- [main] liquibase.command                        : Command execution complete
+2024-05-10T12:13:39.712+02:00  INFO 9596 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-10T12:13:39.979+02:00  INFO 9596 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-10T12:13:40.173+02:00  INFO 9596 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-10T12:13:41.473+02:00  INFO 9596 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-10T12:13:45.949+02:00  INFO 9596 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-10T12:13:45.958+02:00  INFO 9596 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T12:13:47.748+02:00  INFO 9596 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-10T12:13:48.366+02:00  WARN 9596 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-10T12:13:49.880+02:00  INFO 9596 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ecd59a3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15c882e8, org.springframework.security.web.context.SecurityContextHolderFilter@1c81f231, org.springframework.security.web.header.HeaderWriterFilter@49588fc8, org.springframework.web.filter.CorsFilter@5bf17128, org.springframework.security.web.authentication.logout.LogoutFilter@2a872d5e, de.aittr.g_37_jp_shop.security.sec_filter.TokenFilter@544a93b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57ddbe75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42afb24c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e51ac41, org.springframework.security.web.session.SessionManagementFilter@22249b41, org.springframework.security.web.access.ExceptionTranslationFilter@9eb378c, org.springframework.security.web.access.intercept.AuthorizationFilter@6904fe7f]
+2024-05-10T12:13:50.804+02:00  INFO 9596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-10T12:13:50.841+02:00  INFO 9596 --- [main] d.a.g.Group37JavaProShopApplication      : Started Group37JavaProShopApplication in 34.69 seconds (process running for 37.118)
+2024-05-10T12:30:18.681+02:00  INFO 9596 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T12:30:18.781+02:00  INFO 9596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-10T12:30:18.826+02:00  INFO 9596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
